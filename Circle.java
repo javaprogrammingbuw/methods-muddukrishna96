@@ -1,31 +1,32 @@
 
+import java.util.Scanner;
 public class Circle {
 	//todo: add some methods to compute a circle's diameter, circumference and area.
 
 	//print some outputs to confirm your methods are working correctly.
-	public static void main(string[]args){
-		system.out.println("enter radius of circle")
+	public static void main(String[]args){
+		System.out.println("enter radius of circle");
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
+		float n = scan.nextfloat();
 		float diameter = diameter(n);
 		float circuference=circumference(n);
 		float area = area(n);
 	}
-	public static float diameter(int d){
-		r= (2*d);
-		system.out.println("diameter of circle"+d);
-		return(r);
+	public static float diameter(float r){
+		float d= (2*r);
+		System.out.println("diameter of circle"+d);
+		return(d);
 	}
-	public static float circumference(int c){
+	public static float circumference(float r){
 		
-		c=(2*3.14*c);
-			system.out.println("circuference of circle"+c);
+		float c=(2*3.14*r);
+			System.out.println("circuference of circle"+c);
 			return(c);
 	}
-	public static float area(int a){
-		system.out.println("area of circle");
-		a=(3.14*a*a*);
-			system.out.println("area of circle"+a);
+	public static float area(float r){
+		System.out.println("area of circle");
+		float a=(3.14*r*r);
+			System.out.println("area of circle"+a);
 			return(a);
 	}
 }
